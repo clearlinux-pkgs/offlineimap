@@ -4,7 +4,7 @@
 #
 Name     : offlineimap
 Version  : 7.1.4
-Release  : 14
+Release  : 15
 URL      : https://github.com/OfflineIMAP/offlineimap/archive/v7.1.4.tar.gz
 Source0  : https://github.com/OfflineIMAP/offlineimap/archive/v7.1.4.tar.gz
 Summary  : No detailed summary available
