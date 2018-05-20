@@ -4,7 +4,7 @@
 #
 Name     : offlineimap
 Version  : 7.2.0
-Release  : 16
+Release  : 17
 URL      : https://github.com/OfflineIMAP/offlineimap/archive/v7.2.0.tar.gz
 Source0  : https://github.com/OfflineIMAP/offlineimap/archive/v7.2.0.tar.gz
 Summary  : No detailed summary available
@@ -12,9 +12,6 @@ Group    : Development/Tools
 License  : GPL-2.0
 Requires: offlineimap-bin
 Requires: offlineimap-python
-Requires: coverage
-Requires: pytest
-Requires: pytest-cov
 Requires: six
 Requires: six-legacypython
 BuildRequires : pbr
@@ -63,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1526830973
+export SOURCE_DATE_EPOCH=1526831152
 python2 setup.py build -b py2
 
 %install
