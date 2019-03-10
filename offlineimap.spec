@@ -4,7 +4,7 @@
 #
 Name     : offlineimap
 Version  : 7.2.3
-Release  : 24
+Release  : 25
 URL      : https://github.com/OfflineIMAP/offlineimap/archive/v7.2.3.tar.gz
 Source0  : https://github.com/OfflineIMAP/offlineimap/archive/v7.2.3.tar.gz
 Summary  : Synchronizes emails between two repositories
