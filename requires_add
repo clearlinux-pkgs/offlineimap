@@ -2,4 +2,4 @@
 # picked up automatically. One name per line, no whitespace.
 offlineimap-legacypython
 six
-six-legacypython
+deprecated-six-legacypython

@@ -4,7 +4,7 @@
 #
 Name     : offlineimap
 Version  : 7.2.3
-Release  : 25
+Release  : 26
 URL      : https://github.com/OfflineIMAP/offlineimap/archive/v7.2.3.tar.gz
 Source0  : https://github.com/OfflineIMAP/offlineimap/archive/v7.2.3.tar.gz
 Summary  : Synchronizes emails between two repositories
@@ -13,13 +13,13 @@ License  : GPL-2.0
 Requires: offlineimap-bin = %{version}-%{release}
 Requires: offlineimap-license = %{version}-%{release}
 Requires: offlineimap-python = %{version}-%{release}
+Requires: deprecated-six-legacypython
 Requires: offlineimap-legacypython
 Requires: six
-Requires: six-legacypython
 BuildRequires : buildreq-distutils
 BuildRequires : buildreq-distutils3
+BuildRequires : deprecated-six-legacypython
 BuildRequires : six
-BuildRequires : six-legacypython
 
 %description
 Upstream status (`master` branch):
@@ -69,10 +69,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550365784
+export SOURCE_DATE_EPOCH=1554343119
+export MAKEFLAGS=%{?_smp_mflags}
 python2 setup.py build -b py2
 
 %install
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/offlineimap
 cp COPYING %{buildroot}/usr/share/package-licenses/offlineimap/COPYING
